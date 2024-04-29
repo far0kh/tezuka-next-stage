@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -14,13 +15,15 @@ const Navbar = () => {
             className="w-full h-full object-contain rounded-full"
           />
         </div>
-        <h1 className="text-white text-[30px] font-semibold">
-          Tezuka{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#28e7b4] to-[#e6ee92ef]">
-            {" "}
-            NFT{" "}
-          </span>
-        </h1>
+        <Link href="/">
+          <h1 className="text-white text-[30px] font-semibold">
+            Tezuka{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#28e7b4] to-[#e6ee92ef]">
+              {" "}
+              NFT{" "}
+            </span>
+          </h1>
+        </Link>
       </div>
 
     </div>
