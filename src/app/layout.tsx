@@ -7,8 +7,8 @@ import Navigation from "@/components/Navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tezuka - #NFTsForFuture",
-  description: "NOW IT'S TIME TO MOVE ON TO THE NEXT STAGE.",
+  title: "Tezuka | NFTs for the Next Generation",
+  description: "Tezuka serves as The Gateway to Web 3.0 for Artists, Businesses, and Decentralization Enthusiasts.",
 };
 
 export default function RootLayout({
