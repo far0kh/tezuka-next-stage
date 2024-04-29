@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute flex bottom-24 z-[120] right-5 flex-col md:hidden gap-5">
+      <div className="absolute flex bottom-24 z-[50] right-5 flex-col md:hidden gap-5">
         <Link
           href="/read-more"
           className="rounded-[20px] group bg-green-500 px-5 py-3 text-lg text-white max-w-[200px]"
