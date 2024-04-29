@@ -1,0 +1,141 @@
+@use '../../styles/breakpoints' as *;
+@use '../../styles/variables' as *;
+
+
+.timer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    @include breakpoint-768 {
+        gap: 2rem;
+    }
+}
+
+.timer__card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: .5625rem;
+
+    @include breakpoint-768 {
+        gap: 1rem;
+    }
+
+    &-elements {
+        position: relative;
+        height: inherit;
+        width: inherit;
+        border-radius: inherit;
+        overflow: hidden;
+        background-image: linear-gradient(to bottom, rgba(black, 0.1506) 50%, transparent 50%);
+        transform-style: preserve-3d;
+        perspective-origin: center top;
+
+        .line {
+            position: absolute;
+            top: 50%;
+            opacity: 0.253;
+            width: 100%;
+            height: .0296rem;
+            background-color: black;
+            z-index: 10;
+
+            @include breakpoint-768 {
+                height: .0625rem;
+            }
+        }
+
+        .circle {
+            position: absolute;
+            top: 46%;
+            left: -5%;
+            width: .375rem;
+            height: .375rem;
+            border-radius: 100%;
+            background-color: $very-dark-mostly-black-blue;
+            box-shadow: 70px 0 0px $very-dark-mostly-black-blue;
+            z-index: 10;
+
+            @include breakpoint-768 {
+                width: .75rem;
+                height: .75rem;
+                box-shadow: 148px 0 0px $very-dark-mostly-black-blue;
+            }
+        }
+
+        .flipper {
+            height: 50%;
+            width: inherit;
+            position: absolute;
+            top: 50%;
+            background-color: black;
+            opacity: 0.3;
+            transform-origin: top;
+            transform-style: preserve-3d;
+            animation: flip 1s forwards infinite;
+            z-index: 10000;
+        }
+    }
+
+    &-visual {
+        position: relative;
+        width: 4.375rem;
+        height: 4.375rem;
+        border-radius: .5rem;
+        background-color: $dark-desaturated-blue;
+        box-shadow: 0 5px 0 0px black;
+
+        @include breakpoint-768 {
+            width: 9.25rem;
+            height: 9.375rem;
+        }
+    }
+
+    &-num {
+        font-size: 2.25rem;
+        font-weight: $font-weight;
+        color: $purple;
+        letter-spacing: -0.0675rem;
+        border-radius: .25rem;
+        inset: 0;
+        padding: 11px;
+        position: absolute;
+        z-index: 1;
+
+        @include breakpoint-768 {
+            font-size: 5rem;
+            letter-spacing: -0.15rem;
+            line-height: 4.4375rem;
+            padding: 2.1875rem 1.375rem;
+        }
+    }
+
+    &-val {
+        color: $grayish-blue;
+        text-transform: uppercase;
+        font-size: .4375rem;
+        font-weight: $font-weight;
+        letter-spacing: .185rem;
+
+        @include breakpoint-768 {
+            font-size: .875rem;
+            line-height: 1.1875rem;
+            letter-spacing: .37rem;
+        }
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(0deg);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: rotateX(180deg);
+    }
+}
