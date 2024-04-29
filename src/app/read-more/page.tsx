@@ -16,7 +16,7 @@ const Page = () => {
           </h1>
           <p className="hidden md:inline-block text-gray-400 text-[20px]">
             We are thrilled to share some monumental news with you all! As
-            pioneers in the ever-evolving realm of NFTs, we've been on an
+            pioneers in the ever-evolving realm of NFTs, we&apos;ve been on an
             incredible journey together, pushing the boundaries of digital
             ownership and creativity. Today, we stand on the cusp of a
             remarkable milestone, one that marks a significant leap
@@ -47,7 +47,7 @@ const Page = () => {
           <p className="hidden md:inline-block text-gray-400 text-[20px]">
             Stay tuned for more updates, announcements, and surprises in
             the days and weeks ahead. The future of NFTs is bright, and
-            together, we're shaping it in ways we've only dreamed of.
+            together, we&apos;re shaping it in ways we&apos;ve only dreamed of.
           </p>
         </div>
       </div>
