@@ -10,7 +10,7 @@ export default function Home() {
         className="flex items-center w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
-        <div className="pl-10 md:pl-40 pb-44 md:pb-10 flex flex-col gap-5 z-[100] max-w-[750px]">
+        <div className="pl-10 md:pl-40 pb-44 md:pb-10 flex flex-col gap-5 z-[50] max-w-[750px]">
           <h1 className="text-[50px] text-white font-semibold">
             TIME TO MOVE ON TO
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#28e7b4] to-[#e6ee92ef]">
