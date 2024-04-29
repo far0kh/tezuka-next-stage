@@ -44,11 +44,11 @@ const Page = () => {
               brands and artists.
             </li>
           </ul>
-          <p className="hidden md:inline-block text-gray-400 text-[20px]">
+          {/* <p className="hidden md:inline-block text-gray-400 text-[20px]">
             Stay tuned for more updates, announcements, and surprises in
             the days and weeks ahead. The future of NFTs is bright, and
             together, we&apos;re shaping it in ways we&apos;ve only dreamed of.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
