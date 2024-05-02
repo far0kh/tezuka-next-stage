@@ -33,7 +33,7 @@ export default function Home() {
               className="rounded-[20px] group relative bg-trasparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
             >
               <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
-              Countdown
+              Be ready
             </Link>
           </div>
         </div>
