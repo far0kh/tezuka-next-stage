@@ -14,10 +14,10 @@ const Page = () => {
       <div className="flex flex-col gap-20 max-w-[80%] text-center items-center">
         <div className="flex flex-col items-center gap-4">
           <h1 className="font-semibold text-white text-[30px] md:text-[50px]">
-            Countdown{" "}
+            Prepare{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#28e7b4] to-[#e6ee92ef]">
               {" "}
-              to{" "}
+              for{" "}
             </span>
             Launch
           </h1>

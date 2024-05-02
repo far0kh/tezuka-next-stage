@@ -51,7 +51,7 @@ export default function Home() {
           href="/countdown"
           className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          Countdown
+          Be ready
         </Link>
       </div>
 
