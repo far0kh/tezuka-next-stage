@@ -1,7 +1,7 @@
 import { CountdownTimer } from '@/components/CountdownTimer/CountdownTimer';
 // import '@/styles/main.scss'
 
-let target = new Date('2024-07-15T02:13:00')
+let target = new Date('2024-10-31T00:00:00')
 
 const timerLabels = ['days', 'hours', 'minutes', 'seconds']
 
